@@ -1,0 +1,48 @@
+*{
+    margin: 0%; /*abarca los 4 lados arriba, derecha, abajo e izquierda en ese orden */
+    padding: 0%;
+    box-sizing: border-box;
+} /*el asterisco es general para todo el body*/
+
+/*Estilos del navbar*/
+
+.navbar {
+    background-color: rgb(200, 147, 207);
+    color: yellow;
+    padding: 10px 0px;
+
+}
+
+.container {
+    display: flex;/*se hace flexible para mejor manipulacion de los elementos que ha dentro*/
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /*0 arria y abajo y auto derecha e izquiera*/
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem; /*1 rem, 16px*/
+    text-decoration: none;
+    color: rgb(255, 255, 158);
+}
+
+.nav-links{
+    display: flex; /*por defecto trae la propiedad row que alinea horizontalmente*/
+    list-style: none;
+}
+
+.nav-links li{
+    margin-right: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(255, 255, 158);
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover{
+    color: rgb(161, 240, 240);
+}
